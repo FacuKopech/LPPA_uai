@@ -1,0 +1,85 @@
+nav {
+    background-color: red;    
+    display: block;    
+    padding: 10px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: white;
+    padding: 0;
+    text-align: center;    
+    text-decoration: none;
+  }
+
+  
+  nav ul li.active a {
+    background-color: #007bff;
+  }
+  .xpmedia-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 0.25rem!important;
+    font-size: .875rem;
+    font-weight: 700;
+    line-height: 1.5;
+    border-style: solid;
+    border-width: 0.0625rem;
+}
+
+
+.xpmedia-button--small {
+    padding: 0.5rem;
+    height: 2rem;
+}
+
+.kFrzhl {
+    font-family: Georama, Georama-fallback, "Trebuchet MS", sans-serif;
+    background-color: transparent;
+    border-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}
+.xpmedia-button:hover {
+    filter: brightness(.85);
+}
+
+a {
+    transition: color .3s ease;
+}
+
+.news-theme-navigation-container.logo-center .nav-logo a {
+    justify-content: center;
+}
+.eEnpwq .nav-logo img {
+    height: auto;
+    max-width: 240px;
+    width: auto;
+    transition: all 0.5s ease 0s;
+}
+img {
+    height: 40px;
+    width: auto;
+}
+.bKzKcN {
+    z-index: 8;
+}
+
+
+  
+

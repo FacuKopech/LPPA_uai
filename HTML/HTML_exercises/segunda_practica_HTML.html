@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>TITLE</h1>
+    <form action="">
+        <label for="email">Email</label>
+        <input type="email" id="email"/>
+        <div>
+            <label for="name">Nombre</label>
+            <input type="text" id="name"/>
+        </div>
+        <div>
+            <label for="surname">Apellido</label>
+            <input type="text" id="surname"/>
+        </div>
+        <div>
+            <label for="age">Edad</label>
+            <input type="number" id="age"/>
+        </div>
+        <div>
+            <legend>Estudios</legend>
+
+            <label for="studies-primary">Primaria</label>
+            <input type="checkbox" id="studies-primary"/>
+
+            <label for="studies-secondary">Secundaria</label>
+            <input type="checkbox" id="studies-secondary"/>
+
+             <legend>Estado civil</legend>
+
+            <label for="marriage-status">Soltero/a</label>
+            <input type="radio" id="marriage-status" name="marriage-status"/>
+
+            <label for="marriage-status">Casado/a</label>
+            <input type="radio" id="marriage-status" name="marriage-status"/>
+
+           <div>
+             <label>Sede</label>
+                <select>
+                    <option value="rl">Rosario - Lagos</option>
+                    <option value="rp">Rosario - Pellegrini</option>
+                    <option value="bsN">Buenos Aires - No me importa</option>
+                </select>
+            </div>
+            <div>
+                <label for="birth">Fecha de nacimiento</label>
+                <input type="datetime-local" id="birth"/>
+            </div>
+             <div>
+                <label for="password">Clave</label>
+                <input type="password" id="password"/>
+            </div>            
+            <div>
+                <button type="submit">Registrarse</button>
+            </div>
+            
+        </div>
+    </form>
+</body>
+</html>
