@@ -1,5 +1,8 @@
+body{
+  margin: 0%;
+}
 nav {
-    background-color: red;    
+    background-color: rgb(255, 50, 0);    
     display: block;    
     padding: 10px;
   }
@@ -13,21 +16,9 @@ nav {
     align-items: center;
   }
   
-  nav ul li {
-    margin: 0 10px;
-  }
-  
-  nav ul li a {
-    color: white;
-    padding: 0;
-    text-align: center;    
-    text-decoration: none;
-  }
-
-  
-  nav ul li.active a {
-    background-color: #007bff;
-  }
+.nav-img{
+  height: 45px;
+}
   .xpmedia-button {
     display: flex;
     align-items: center;
@@ -35,17 +26,118 @@ nav {
     flex-shrink: 0;
     cursor: pointer;
     text-decoration: none;
-    border-radius: 0.25rem!important;
+    border-radius: 0.25rem;
     font-size: .875rem;
     font-weight: 700;
-    line-height: 1.5;
     border-style: solid;
     border-width: 0.0625rem;
+    padding-left: 8px;
+}
+
+.linea{
+  background-color: #e7ebe7;
+  height: 1px;
+  width: 900px;
+}
+
+.menu-svg{
+  padding-left: 8px;
+}
+
+.header-container{
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  margin: 0 auto; 
+}
+
+.main-img-container{
+  max-width: 900px;
+  margin: 0 auto;  
+}
+.main-img{
+  width: 100%;
+  height: 100%;
+  margin: 0;  
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  max-width: 862px;
+}
+
+.customIcons{
+  display: flex;
+    width: 120px;
+    justify-content: space-between;
+}
+
+.internetButton{
+  margin-bottom: 100px;
+  padding-bottom: 3px;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 1rem;
+  font-family: 'Georama','Georama-fallback','Trebuchet MS',sans-serif;
+  padding: 0.1rem 0.6rem;
+  background: #ff3200;
+  color: #fff;
+  right: 70%; 
+}
+
+h1{
+  font-family: "Georama", "Georama-fallback", "Trebuchet MS", sans-serif;
+  font-weight: 600;
+}
+h3{
+  font-family: Georama, Georama-fallback, "Trebuchet MS", sans-serif;
+  font-weight: 400;
 }
 
 
+figcaption{
+  font-family: Georama, Georama-fallback, "Trebuchet MS", sans-serif;  
+}
+.div-fecha{
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #f5f7f5;
+}
+section p {
+  max-width: 900px;
+  margin: 0 auto;
+  
+}
+a b {
+  line-height: 1.8rem;
+  color: #ff3200;
+  word-break: break-word;
+  font-family: "Open Sans", Open-fallback, Arial, sans-serif;
+  cursor: pointer;
+}
+.ElonUnderline{
+  text-decoration-line: none;
+  text-decoration: none;
+  text-decoration-color: #e7ebe7;
+}
+section h2 {
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: Georama, Georama-fallback, "Trebuchet MS", sans-serif;
+}
+p{
+  font-family: "Open Sans", Open-fallback, Arial, sans-serif;
+  font-size: 1.25rem;
+  justify-content: center;
+  align-items: center;  
+}
+
+div section span a {
+  width: 50%;
+}
 .xpmedia-button--small {
-    padding: 0.5rem;
     height: 2rem;
 }
 
@@ -72,14 +164,39 @@ a {
     width: auto;
     transition: all 0.5s ease 0s;
 }
-img {
-    height: 40px;
-    width: auto;
-}
+
 .bKzKcN {
     z-index: 8;
 }
+footer{
+  height: 55px;
+  background-color:white;
+  display: flex;    
+  max-width: 900px;
+  margin: 0 auto;
+}
 
-
+.footer-img{
+  height: 50px;
+  display: flex;        
+  border-radius: 100%;
+  margin-bottom: -54px;
   
-
+}
+.name{
+  font-family: Georama, Georama-fallback, "Trebuchet MS", sans-serif;
+  font-weight: 700;
+  font-size: large;
+  color: rgb(255, 50, 0);       
+  text-decoration-line: none;
+  display: flex;
+  margin-left: 100px;
+  margin-top: 7px;
+}
+.description{
+  font-family: "Open Sans", Open-fallback, Arial, sans-serif;
+  font-size: 1.25rem;  
+  display: flex;
+  margin-left: 100px;
+  margin-top: 7px;
+}
