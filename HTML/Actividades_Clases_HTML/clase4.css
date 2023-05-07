@@ -17,9 +17,9 @@ nav {
   }
   
 .nav-img{
-  height: 45px;
+  height: 45px;  
 }
-  .xpmedia-button {
+.menuButton {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,6 +42,20 @@ nav {
 
 .menu-svg{
   padding-left: 8px;
+}
+
+.menuButton--small {
+  height: 2rem;
+}
+
+.nav-items {
+  font-family: Georama, Georama-fallback, "Trebuchet MS", sans-serif;
+  background-color: transparent;
+  border-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+}
+.menuButton:hover {
+filter: brightness(.85);
 }
 
 .header-container{
@@ -137,37 +151,13 @@ p{
 div section span a {
   width: 50%;
 }
-.xpmedia-button--small {
-    height: 2rem;
-}
 
-.kFrzhl {
-    font-family: Georama, Georama-fallback, "Trebuchet MS", sans-serif;
-    background-color: transparent;
-    border-color: rgb(255, 255, 255);
-    color: rgb(255, 255, 255);
-}
-.xpmedia-button:hover {
-    filter: brightness(.85);
-}
 
 a {
-    transition: color .3s ease;
+  transition: color .3s ease;
 }
 
-.news-theme-navigation-container.logo-center .nav-logo a {
-    justify-content: center;
-}
-.eEnpwq .nav-logo img {
-    height: auto;
-    max-width: 240px;
-    width: auto;
-    transition: all 0.5s ease 0s;
-}
 
-.bKzKcN {
-    z-index: 8;
-}
 footer{
   height: 55px;
   background-color:white;
