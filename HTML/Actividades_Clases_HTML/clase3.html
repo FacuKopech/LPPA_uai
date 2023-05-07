@@ -4,9 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="clase3.css" />
     <title>Document</title>
 </head>
 <body>
+
+    <div>        
+        <form action="/action_page.php">
+            <h3>Complete los datos requeridos</h3>
+
+            <br>            
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email..."/>
+
+            <label for="fname">Nombre</label>
+            <input type="text" id="fname" name="firstname" placeholder="Nombre...">
+        
+            <label for="lname">Apellido</label>
+            <input type="text" id="lname" name="lastname" placeholder="Apellido...">
+
+            <label for="edad">Edad</label>
+            <input type="number" id="edad" placeholder="Edad..."/>
+
+        
+            <label for="country">Pais</label>
+            <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="argentina">Argentina</option>
+            <option value="brasil">Brasil</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+
+            </select>
+            
+            <legend>Estudios</legend>
+
+            <br>
+
+            <label for="studies-primary">Primaria</label>
+            <input type="checkbox" id="studies-primary"/>
+
+            <label for="studies-secondary">Secundaria</label>
+            <input type="checkbox" id="studies-secondary"/>
+
+            <br>
+            <br>
+            <legend>Estado civil</legend>
+
+            <br>
+
+            <label for="marriage-status">Soltero/a</label>
+            <input type="radio" id="marriage-status" name="marriage-status"/>
+
+            <label for="marriage-status">Casado/a</label>
+            <input type="radio" id="marriage-status" name="marriage-status"/>
+
+            <br>
+            <br>   
+            <label>Sede</label>
+                <select>
+                    <option value="rl">Rosario - Lagos</option>
+                    <option value="rp">Rosario - Pellegrini</option>
+                    <option value="bsN">Buenos Aires - No me importa</option>
+                </select>
+            
+            <br>
+            <br>
+            <label for="birth">Fecha de nacimiento</label>
+            <input type="datetime-local" id="birth"/>
+            <br>
+            <br>
+            <label for="password">Clave</label>
+            <input type="password" id="password"/>
+            <br>
+            <br>
+            <br>
+            <input type="submit" value="Registrarse"/>
+        </form>
+    </div>
     
 </body>
 </html>
