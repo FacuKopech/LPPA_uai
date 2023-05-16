@@ -49,7 +49,12 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .ulNoticiasMenu{
-    padding: 0%;
+  display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;  
+  padding: 0%;
+
 }
 
 .navBottom li{
@@ -91,8 +96,9 @@ figure {
   }
   main{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    flex-direction: row;    
+    flex-wrap: wrap;
   }
 .divSideNews{
     max-width: 368px;
@@ -123,6 +129,9 @@ figure {
     font-size: large;
     font-family: 'Rye', cursive;
     text-decoration-line: underline;
+  }
+  .hrMobileFirst{
+    opacity: 0;
   }
   .divSideNewsContent{
     display: flex;
@@ -317,3 +326,75 @@ footer{
     width: 42px;
     margin-top: -5px;
   }
+
+  @media (max-width: 414px) and (max-height: 896px) {
+    header {
+      width: 235%;
+    }
+    
+    main{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .hrMobileFirst{
+      margin-top: 7px;
+      opacity: 1;
+    }
+    .divSideNews{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      max-width: inherit;
+      align-content: center;
+    }
+    .divSideNewsTitle{
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      margin-left: 10px;
+      font-weight: bold;
+      font-size: large;
+      font-family: 'Rye', cursive;
+      text-decoration-line: underline;
+    }
+    .aMobileFirstColumna2Noticia1{
+      margin-top: 65px;
+      margin-bottom: 21px;
+    }
+    .aMobileFirstColumna2Noticia2{
+      margin-top: 10px;
+    }
+
+    .divMainContentTitle{
+      font-size: 30px;
+      margin-top: -62px;
+    }
+
+    .divMainContentSubtitle{
+      font-size: 24px;
+      margin-top: -64px;
+    }
+
+    .divHoroscope{     
+      align-content: center;
+      flex-wrap: wrap;
+      width: 967px;
+      margin-top: 72px;
+    }
+    .divHoroscopeTitle{
+      font-weight: bold;
+      font-size: large;
+      font-family: 'Rye', cursive;
+      text-decoration-line: underline;
+      margin-left: 163px;      
+    }
+    .aMobileFirstHroscope{
+      margin-top: 68px;;
+    }
+    footer{
+      width: 235%;
+    }
+  }
+  
