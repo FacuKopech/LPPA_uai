@@ -1,6 +1,24 @@
 body{
     margin: 0%;
 }
+body::-webkit-scrollbar {
+  width: 10px; /* Set the width of the scrollbar */
+}
+
+/* Track styles */
+body::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Set the background color of the track */
+}
+
+/* Handle styles */
+body::-webkit-scrollbar-thumb {
+  background: #888; /* Set the background color of the handle */
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Set the background color of the handle on hover */
+}
 .navTop{
     background-color: #274156;
     margin: 0%;
@@ -11,18 +29,19 @@ body{
     flex-wrap: wrap;
 }
 .navTitle{
-    margin-top: 15px;    
-    font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
+    margin-top: -5px;    
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 20px;
 }
 .divNavigationMenu{
-    background-color: #587b7fb0;
+    background-color: #17141345;
 }
 .h1InternationalNews{
     display: flex;
     justify-content: center;
     margin-bottom: -16px;
     margin-top: 0px;
-    font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
+    font-family: 'Rye', cursive;
 }
 .navBottom{
     display: flex;
@@ -53,7 +72,7 @@ figure {
     margin-left: -15px;
     
   }
-  figcaption {
+  figure figcaption {
     position: absolute;   
     text-align: center;
     left: 0;
@@ -76,23 +95,40 @@ figure {
     justify-content: space-between;
   }
 .divSideNews{
-    background-color: #587b7fb0;
-    max-width: 450px;
-    height: auto;
+    max-width: 368px;
+    height: 634px;
+    overflow: auto;
+}
+.divSideNews::-webkit-scrollbar {
+  width: 10px; 
+}
+
+.divSideNews::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+.divSideNews::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+.divSideNews::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
   .divSideNewsTitle{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     margin-left: 10px;    
     font-weight: bold;
     font-size: large;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Rye', cursive;
     text-decoration-line: underline;
   }
   .divSideNewsContent{
     display: flex;
     justify-content: flex-end;
-    flex-direction: row-reverse;    
+    flex-direction: column-reverse;
+    flex-wrap: wrap;   
   }
 
   .divSideNewsContentText{
@@ -133,13 +169,91 @@ figure {
     margin-top: -1px;
   }
 
+
+  .divMainContent{
+    display: flex;
+    flex-direction: column;
+    width: 960px;    
+  }
+
+  .divMainContentTitle{
+    display: flex;
+    justify-content: center;
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 20px;
+  }
+
+  .divMainContentSubtitle{
+    display: flex;
+    justify-content: center;
+    margin-top: -38px;
+    font-family: 'Rye', cursive;
+  }
+
+  .divNationalNews{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .divNationalNews hr{
+    margin-top: 16px;
+    margin-bottom: 24px;
+  }
+
+  .divNationalNews h3{
+    display: flex;
+    justify-content: center;    
+    font-family: 'Rye', cursive;
+  }
+  .divNationalNewsTitle{
+    display: flex;
+    justify-content: center;
+  }
+  .divLaNacion{
+    margin-top: -24px;
+  }
+  .divNationalNewsTitle img{
+    width: 125px;
+  
+  }
+
+  .divNationalNewsContent{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .divNationalNewsContent img{
+    width: 260px;
+    margin-top: 18px;
+  }
+
+  .divNationalNewsContent figcaption{
+    max-width: 266px;
+  }
+
+
   .divHoroscope{
     overflow: auto;
     width: 215px;
-    background-color: #587b7fb0;
     display: flex;
     flex-direction: column;
     height: 634px;
+  }
+  .divHoroscope::-webkit-scrollbar {
+    width: 10px; 
+  }
+  
+  .divHoroscope::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  
+  .divHoroscope::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  .divHoroscope::-webkit-scrollbar-thumb:hover {
+    background: #555; 
   }
   .divHoroscopeTitle{
     display: flex;
@@ -147,7 +261,7 @@ figure {
     margin-left: 10px;
     font-weight: bold;
     font-size: large;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Rye', cursive;
     text-decoration-line: underline;
   }
 .divHoroscopeContent{
@@ -170,8 +284,36 @@ figure {
     transition: transform 0.2s ease-out;
     display: flex;
     flex-wrap: wrap;   
-    margin-left: 10px;    
+    margin-left: 10px;   
+    margin-bottom: 5px;
+    margin-top: -6px; 
 }
 
+footer{
+  display: flex;
+  justify-content: space-around;
+  background-color: #274156;
+  height: 100px;
+  margin-top: 20px;
+}
+.divHR{
+  margin-bottom: 32px;
+}
 
-
+.divSocialMediaIcons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 800px;
+  margin-top: 30px;
+}
+.divFollowUs p{
+  margin-top: 8px;
+  font-family: 'Rye', cursive;
+  font-size: large;
+}
+.divIcon img{
+  border-radius: 100%;
+    width: 42px;
+    margin-top: -5px;
+  }
