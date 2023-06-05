@@ -26,6 +26,7 @@ background: #555; /* Set the background color of the handle on hover */
   height: 72px;  
 }
 .divHamburgerIcon{
+  max-width: 200px;
   display: flex;
   opacity: 0;
 }
@@ -176,6 +177,20 @@ background: #555; /* Set the background color of the handle on hover */
   font-size: 20px;
   display: flex;
   justify-content: center;
+}
+.subscribeButtonDiv{
+  display: flex;
+    justify-content: end;
+    margin-right: 10px;
+    margin-top: -58px;
+}
+.btnSubscribe{
+  background: transparent;
+  border: none;
+  font-weight: bold;
+  font-family: 'Rye';
+  color: cadetblue;
+  font-size: initial;
 }
 .divNavigationMenu{
   /* background-color: #17141345; */

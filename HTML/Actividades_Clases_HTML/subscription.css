@@ -1,0 +1,191 @@
+main{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 1115px;
+  background-image: url(https://wallpaperaccess.com/full/1558260.jpg);
+}
+body{
+  margin: 0%;  
+}
+body::-webkit-scrollbar {
+width: 10px; /* Set the width of the scrollbar */
+}
+
+/* Track styles */
+body::-webkit-scrollbar-track {
+background: #f1f1f1; /* Set the background color of the track */
+}
+
+/* Handle styles */
+body::-webkit-scrollbar-thumb {
+background: #888; /* Set the background color of the handle */
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+background: #555; /* Set the background color of the handle on hover */
+}
+
+.navTop{
+  background-color: #274156;
+  margin: 0%;
+  margin-top: -20px;     
+}
+
+.navTitle{
+    
+  font-family: 'Grenze Gotisch', cursive;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  max-width: 700px;    
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 4%;
+  font-weight: bold;  
+  display: flex;
+  justify-content: center;
+}
+form{
+  max-width: 625px;            
+}
+.h3Title{
+  display: flex;
+  justify-content: center;
+  font-family: 'Rye', cursive;
+}
+.labelNombre{
+  font-family: 'Rye', cursive;
+}
+.divBienvenida{
+  display: flex;
+  flex-direction: row;
+  font-family: 'Rye', cursive;
+}
+.h4Bienvenida{
+  margin: unset;
+}
+.labelNombre{
+  margin-left: 8px;
+  font-weight: bold;
+}
+.containerDivs{
+  display: flex;
+  justify-content: center;
+}
+.divColumnaIzq{
+  max-width: 50%;
+  margin-left: 5px;
+}
+.divColumnaDer{
+  max-width: 50%;
+  margin-left: 5px;
+}
+input[type=text], input[type=number], input[type=email],input[type=password], input[type=datetime-local], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;    
+}
+
+input[type=submit] {  
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+.submitButtonDiv{
+  display: flex;
+  justify-content: center;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+label{    
+  font-family: Georama, Georama-fallback, "Trebuchet MS", sans-serif;
+}
+legend{
+  font-family: Georama, Georama-fallback, "Trebuchet MS", sans-serif;
+}
+
+#popupContainer{
+  display: flex;
+  flex-direction: column;
+  background-color: #274156;
+  flex-wrap: wrap;
+  border-radius: 14px;
+  height: fit-content;
+  width: fit-content;  
+  margin: 0 auto;    
+  display: flex;
+  position: absolute;
+}
+
+.divButtons{  
+  display: flex;
+  justify-content: space-around;
+}
+.btnPopup{
+  background-color: transparent;
+    border: none;
+    font-weight: bold;
+    border-radius: 14px;
+}
+.btnPopup:hover{
+  background-color: darkcyan;
+}
+
+footer{
+  display: flex;
+  justify-content: space-around;
+  background-color: #274156;
+  height: 100px;  
+  }
+  .divHR{
+  margin-bottom: 32px;
+  }
+  
+  .divSocialMediaIcons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 800px;
+  margin-top: 30px;
+  }
+  .divFollowUs p{
+  margin-top: 8px;
+  font-family: 'Rye', cursive;
+  font-size: large;
+  }
+  .divIcon img{
+  border-radius: 100%;
+    width: 42px;
+    margin-top: -5px;
+  }
+
+  @media (max-width: 414px) {
+    .containerDivs{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: center;
+    }
+  
+  }

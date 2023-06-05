@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Palo_Alto_Daily_Post_%282021-01-21%29.svg/1200px-Palo_Alto_Daily_Post_%282021-01-21%29.svg.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" type="text/css" href="subscription.css" />    
+    <title>SubscribeToTheDailyPost</title>  
+</head>
+<body>
+    <header>
+        <div>
+            <nav class="navTop">                  
+                <div class="navTitle">
+                    <h1>The Daily Post</h1>
+                </div>              
+            </nav>
+        </div>        
+        
+    </header>
+    <main>        
+        <div class="container">                 
+            <div id="popupContainer">                              
+            </div>   
+            <form id="myForm">                           
+                <div class="divBienvenida">
+                    <h4 class="h4Bienvenida">Bienvenido </h4> <label class="labelNombre" id="welcome"></label>
+                </div>
+                <br> 
+                <div class="divTitle">
+                    <h3 class="h3Title">Complete los datos requeridos</h3>
+                </div>     
+                <br> 
+                <div class="containerDivs">
+                    <div class="divColumnaIzq">
+                        <label for="fname">Nombre completo</label>
+                        <input type="text" id="fname" name="Nombre completo" placeholder="Nombre...">
+                        <span id="nameError" data-name="Error en nombre" class="error"></span>
+               
+                        <label for="email">Email</label>
+                        <input type="text" name="Email" id="email" placeholder="Email..."/>
+                        <span id="emailError" data-name="Error en Email" class="error"></span>
+            
+                        <label for="edad">Edad</label>
+                        <input type="number" name="Edad" id="edad" placeholder="Edad..."/>
+                        <span id="edadError" data-name="Error en edad" class="error"></span>
+        
+                        <label for="tel">Telefono</label>
+                        <input type="number" name="Telefono" id="tel" placeholder="Telefono..."/>
+                        <span id="telError" data-name="Error en telefono" class="error"></span>
+        
+                        <label for="dire">Direccion</label>
+                        <input type="text" id="dire" name="Direccion" placeholder="Direccion...">
+                        <span id="direError" data-name="Error en direccion" class="error"></span>
+                    </div>
+                    <div class="divColumnaDer">
+                        <label for="ciudad">Ciudad</label>
+                        <input type="text" id="ciudad" name="Ciudad" placeholder="Ciudad...">
+                        <span id="ciudadError"  data-name="Error en ciudad" class="error"></span>
+        
+                        <label for="CP">CP</label>
+                        <input type="number" id="CP" name="CP" placeholder="CP...">
+                        <span id="CPError" data-name="Error en codigo postal" class="error"></span>
+        
+                        <label for="DNI">DNI</label>
+                        <input type="number" id="DNI" name="DNI" placeholder="DNI...">
+                        <span id="DNIError" data-name="Error en DNI" class="error"></span>
+                                   
+                        <label for="password">Clave</label>
+                        <input type="password" id="password"/>
+                        <span id="claveError" data-name="Error en clave" class="error"></span>
+                        <label for="re-password">Repetir clave</label>
+                        <input type="password" id="re-password"/>     
+                        <span id="reClaveError" data-name="Error en repetir clave" class="error"></span>          
+                    </div>   
+                </div>
+                   
+                <br>
+                <br>
+                <br>      
+                <div class="submitButtonDiv">
+                    <input type="submit" value="Registrarse"/>
+                </div>                          
+            </form>
+        </div>      
+    </main>
+
+    <footer>
+                    
+        <div class="divSocialMediaIcons">
+            <div class="divIcon">
+                <a>
+                    <img src="https://play-lh.googleusercontent.com/J8k5q78xv4R8Smi4vOE6iUphLvOz0efC-0lzoyGfd0KRUlAv4ekuCtlss6KBN-tMvEw" alt="" title="Twitter">
+                </a>
+            </div>
+            <div class="divIcon">
+                <a>
+                    <img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="" title="Facebook">
+                </a>
+            </div>
+            <div class="divFollowUs">
+                <p>Follow Us</p>
+            </div>
+            <div class="divIcon">
+                <a>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png" alt="" title="Instagram">
+                </a>
+            </div>
+            <div class="divIcon">
+                <a>
+                    <img src="https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw" alt="" title="LinkedIn">
+                </a>
+            </div>
+        </div>            
+    
+</footer>
+</body>
+</html>
+
+<script src="subscription.js"></script>
