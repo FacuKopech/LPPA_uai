@@ -204,7 +204,7 @@ for (var i = 0; i < formInputs.length; i++) {
         }
     }    
     if (inputValue) {
-      popupContent += `<p style="font-weight: bold;">` + inputName + ": " + inputValue + "</p>";
+      popupContent += `<p style="font-weight: bold; color: white;">` + inputName + ": " + inputValue + "</p>";
     }
   }
   popupContent += `<div class="divButtons"><button class="btnPopup" onclick="acceptAction()"> Aceptar </button> <button class="btnPopup" onclick="cancelAction()">Cancelar</button></div>`;  
