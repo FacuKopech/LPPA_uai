@@ -379,17 +379,7 @@ function acceptAction(){
   function cancelAction(){
     popupContainer.style.display = "none";          
   }
-  function confirmAction(){
-    fullName.value = "";
-    email.value = "";
-    edad.value = "";
-    tel.value = "";
-    dire.value = "";
-    ciudad.value = "";
-    CP.value = "";
-    DNI.value = "";
-    password.value = "";
-    REpassword.value = "";
+  function confirmAction(){    
     var form = document.querySelector('form[id="myForm"]');      
     form.submit();             
   }
