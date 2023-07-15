@@ -51,7 +51,31 @@ main{
     resize: both;
     overflow: auto;
     background-color: #274156;
+    
 }
+
+.color-layer-looser {
+    display: none;
+    background-color: #9f0f16db;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  
+  .color-layer-winner{
+    display: none;
+    background-color: #00a74bd6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
 .divContainerData{
     display: flex;
     flex-direction: row;
@@ -343,7 +367,11 @@ main{
     display: none;
     flex-direction: column;
     flex-wrap: wrap;
-    align-content: center;
+    align-content: center;    
+    position: absolute;
+    justify-content: center; 
+    width: -webkit-fill-available;
+    z-index: 1000;
 }
  .popup-content{
     width: fit-content;
@@ -577,4 +605,28 @@ main{
     align-self: center;
   }
   
-
+  @media screen and (max-width: 730px) {    
+    .divContainerData {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-content: center;
+      
+    }
+    .divTitle{
+        order: 1;
+    }
+    .divLeftData{
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .divRightData{
+        order: 3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  }

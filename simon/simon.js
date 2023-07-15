@@ -15,6 +15,9 @@ titlePopup = document.getElementById("popupTitle");
 popupLooser = document.getElementById('popupLooser');
 btnClosePopup = document.getElementById('closePopupBtn');
 btnReset = document.getElementById('btnReset');
+looserLayerElement = document.querySelector('.color-layer-looser');
+winnerLayerElement = document.querySelector('.color-layer-winner');
+
 
 var audioRojo = new Audio("C:/Users/FacundoKopech/Downloads/redBtnAudio.mp3");
 var audioAzul = new Audio("C:/Users/FacundoKopech/Downloads/blueBtnAudio.mp3");
@@ -144,6 +147,11 @@ btnRed.addEventListener("click", function(){
     }
     
     if(playerClicksCounter == gameSequenceArray.length && playerClicksCounter != 0){
+        winnerLayerElement.style.display = "flex";
+
+        setTimeout(() => {
+            winnerLayerElement.style.display = "none";
+        }, 900);
         setTimeout(function() {
             armarSecuencia()
         }, 1500);
@@ -170,6 +178,11 @@ btnBlue.addEventListener("click", function(){
     }
     
     if(playerClicksCounter == gameSequenceArray.length && playerClicksCounter != 0){
+        winnerLayerElement.style.display = "flex";
+
+        setTimeout(() => {
+            winnerLayerElement.style.display = "none";
+        }, 900);
         setTimeout(function() {
             armarSecuencia()
         }, 1500);
@@ -196,19 +209,25 @@ btnGreen.addEventListener("click", function(){
     } 
     
     if(playerClicksCounter == gameSequenceArray.length && playerClicksCounter != 0){
+        winnerLayerElement.style.display = "flex";
+
+        setTimeout(() => {
+            winnerLayerElement.style.display = "none";
+        }, 900);
         setTimeout(function() {
-            armarSecuencia()
+            armarSecuencia()        
         }, 1500);
     }    
 });
 
 btnGreen.addEventListener("mousedown", function() {
     btnGreen.classList.add("transition-active-green");
-    audioVerde.play();
+    audioVerde.play();    
   });
     
   btnGreen.addEventListener("mouseup", function() {
     btnGreen.classList.remove("transition-active-green");
+   
   });
 
 btnYellow.addEventListener("click", function(){
@@ -221,6 +240,11 @@ btnYellow.addEventListener("click", function(){
         labelScore.textContent = actualScore;
     }
     if(playerClicksCounter == gameSequenceArray.length && playerClicksCounter != 0){
+        winnerLayerElement.style.display = "flex";
+
+        setTimeout(() => {
+            winnerLayerElement.style.display = "none";
+        }, 900);
         setTimeout(function() {
             armarSecuencia()
         }, 1500);
@@ -237,7 +261,14 @@ btnYellow.addEventListener("mousedown", function() {
   });
 
 function finalizarJuego(){
+    looserLayerElement.style.display = "flex";
+
+    setTimeout(() => {
+        looserLayerElement.style.display = "none";
+    }, 900);
+
     popupLooser.style.display = "flex";
+    btnPlay.disabled = true;
     var updatedTitle = `GAME OVER ${input.value}!`;
     titlePopup.textContent = updatedTitle;
     labelScoreGameOver.textContent = actualScore;
@@ -252,7 +283,7 @@ function finalizarJuego(){
     btnYellow.disabled = true;
     levelDisplay.textContent = "";    
     btnPlay.textContent = "JUGAR";
-    btnPlay.disabled = false;
+    
     
     audioGameOver.play();
     var highScore = localStorage.getItem('highScore');
@@ -285,6 +316,7 @@ function finalizarJuego(){
 
 btnClosePopup.addEventListener('click', function() {
     popupLooser.style.display = 'none';
+    btnPlay.disabled = false;
   });
 
   btnReset.addEventListener('click', function() {
